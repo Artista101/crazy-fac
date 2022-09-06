@@ -1,0 +1,19 @@
+
+[package]
+name = "XenoverseUp/crazy-factory"
+version = "1.0.1"
+description = "A factory simulation game written in AssemblyScript for WASM4 Game Jam #2."
+license = "ISC"
+repository = "https://github.com/XenoverseUp/crazy-factory-wasm4"
+
+[[module]]
+name = "crazy-factory"
+source = "build/cart.wasm"
+abi = "wasm4"
+interfaces = { wasm4 = "0.0.1" }
+
+
+[[command]]
+name = "play"
+module = "crazy-factory"
+runner = "wasm4@0.0.1"
